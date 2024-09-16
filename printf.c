@@ -31,14 +31,13 @@ int _printf(const char *format, ...)
 				continue;
 			}
 			fp = get_type(*p);
-			count += (fp) ? fp(args) : _printf("%%%c");
+			count += (fp) ? fp(args) : _printf("%%%c", *p);
 		}
 		else
 		{
 			count += _putchar(*p);
 		}
 	}
-	_putchar(-1);
 	va_end(args);
 	return (count);
 }
