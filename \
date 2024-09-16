@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * _printf - Produces formatted output
+ *
+ * @format: string of characters to print
+ * Return: number of characters printed
+ */
+
+int _printf(const char *format, ...)
+{
+	int i, count = 0;
+	char buffer[1000];
+	va_list args;
+
+	va_start(args, format);
+
+	i = 0;
+	while (format && format[i])
+	{
+		if (format[i] == '%')
+		{
+			type_checker(format[i + 1]);

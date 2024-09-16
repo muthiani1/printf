@@ -58,7 +58,6 @@ int _printf(const char *format, ...)
 	}
 	buffer[j] = '\0';
 
-	printf("%s\n", buffer);
 	return (j);
 	va_end(args);
 }
