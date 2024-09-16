@@ -11,7 +11,8 @@
  * @f: function pointer
  */
 
-typedef struct type_handler {
+typedef struct type_handler
+{
 	char c;
 	int (*f)(va_list);
 } type_h;

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * type_char - prints a character
+ * print_char - prints a character
  *
  * @l: variable arguments list from printf
  * Return: number of characters printed
@@ -14,8 +14,8 @@ int print_char(va_list l)
 }
 
 /**
- * type_string - prints a string
- * 
+ * print_string - prints a string
+ *
  * @l: variable arguments list from printf
  * Return: number of characters printed
  */
@@ -26,5 +26,5 @@ int print_string(va_list l)
 
 	if (!s)
 		s = "(null)";
-	return(_puts(s));
+	return (_puts(s));
 }
