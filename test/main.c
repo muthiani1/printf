@@ -14,6 +14,6 @@ int main(void)
     len = _printf("Let's try to printf a simple sentence.\n");
     printf("Length:[%d]\n", len);
     _printf("Character:[%c]\n", 'H');
-    _printf("String:[%s]\n", "I am a string !");
+    _printf("String:[%s]\n", "");
     return (0);
 }
