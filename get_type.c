@@ -14,9 +14,10 @@ int (*get_type(char s))(va_list)
 		{'i', print_int},
 		{'s', print_string},
 		{'c', print_char},
-		{'d', print_int}
+		{'d', print_int},
+		{'b', print_binary}
 	};
-	int flags = 4;
+	int flags = 5;
 
 	for (i = 0; i < flags; i++)
 		if (func_arr[i].c == s)

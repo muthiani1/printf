@@ -25,5 +25,6 @@ int print_string(va_list l);
 int print_int(va_list l);
 int count_digits(int n);
 void print_number(int n);
+int print_binary(va_list l);
 
 #endif /* MAIN_H */
