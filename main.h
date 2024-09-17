@@ -11,8 +11,7 @@
  * @f: function pointer
  */
 
-typedef struct type_handler
-{
+typedef struct type_handler {
 	char c;
 	int (*f)(va_list);
 } type_h;
@@ -23,5 +22,8 @@ int _puts(char *s);
 int (*get_type(char s))(va_list);
 int print_char(va_list l);
 int print_string(va_list l);
+int print_int(va_list l);
+int count_digits(int n);
+void print_number(int n);
 
 #endif /* MAIN_H */

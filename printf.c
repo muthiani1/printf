@@ -10,9 +10,10 @@
 int _printf(const char *format, ...)
 {
 	const char *p;
-	int count = 0;
 	int (*fp)(va_list);
 	va_list args;
+
+	register int count = 0;
 
 	va_start(args, format);
 	if (!format || (format[0] == '%' && !format[1]))
@@ -38,6 +39,7 @@ int _printf(const char *format, ...)
 			count += _putchar(*p);
 		}
 	}
+
 	va_end(args);
 	return (count);
 }

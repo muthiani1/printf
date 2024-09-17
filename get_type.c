@@ -11,10 +11,12 @@ int (*get_type(char s))(va_list)
 {
 	int i;
 	type_h func_arr[] = {
-		{'c', print_char},
+		{'i', print_int},
 		{'s', print_string},
+		{'c', print_char},
+		{'d', print_int}
 	};
-	int flags = 2;
+	int flags = 4;
 
 	for (i = 0; i < flags; i++)
 		if (func_arr[i].c == s)
