@@ -14,7 +14,7 @@ int print_address(va_list l, flags_t *f)
 	unsigned long int p = va_arg(l, unsigned long int);
 
 	if (!p)
-		return (_puts("(null)"));
+		return (_puts("(nil)"));
 
 	(void)f;
 
