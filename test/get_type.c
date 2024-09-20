@@ -7,7 +7,7 @@
  * Return: fucntion pointer to correct print function
  */
 
-int (*get_type(char s))(va_list)
+int (*get_type(char s))(va_list, flags_t)
 {
 	int i;
 	type_h func_arr[] = {

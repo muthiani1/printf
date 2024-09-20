@@ -7,11 +7,13 @@
  * Return: number of characters printed
  */
 
-int print_custom(va_list l)
+int print_custom(va_list l, flags_t *f)
 {
 	int i, count = 0;
 	char *res;
 	char *s = va_arg(l, char *);
+
+	(void)f;
 
 	if (!s)
 		count += _puts("(null)");

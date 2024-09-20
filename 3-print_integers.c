@@ -7,10 +7,17 @@
  * Return: number of digits printed
  */
 
-int print_int(va_list l)
+int print_int(va_list l, flags_t *f)
 {
 	int n = va_arg(l, int);
 	int count = count_digits(n);
+
+	if (f->space == 1 && f->plus == 0 && n > 0)
+		count += _putchar(' ');
+	if (f->plus == 1)
+		count += _putchar('+');
+	if (n <= 0)
+		count++;
 
 	print_number(n);
 	return (count);

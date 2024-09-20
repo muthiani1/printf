@@ -7,7 +7,7 @@
  * Return: fucntion pointer to correct print function
  */
 
-int (*get_type(char s))(va_list)
+int (*get_type(char s))(va_list, flags_t *)
 {
 	int i;
 	type_h func_arr[] = {
@@ -20,9 +20,10 @@ int (*get_type(char s))(va_list)
 		{'o', print_octal},
 		{'x', print_hex},
 		{'X', print_hexBig},
-		{'S', print_custom}
+		{'S', print_custom},
+		{'p', print_address}
 	};
-	int flags = 10;
+	int flags = 11;
 
 	for (i = 0; i < flags; i++)
 		if (func_arr[i].c == s)
