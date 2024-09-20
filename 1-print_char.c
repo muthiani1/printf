@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * type_char - prints a character
+ * print_char - prints a character
  *
  * @l: variable arguments list from printf
+ * @f: flags
  * Return: number of characters printed
  */
 

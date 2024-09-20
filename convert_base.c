@@ -3,8 +3,9 @@
 /**
  * convert_base - converts input into desired base
  *
- * @n: input number
+ * @num: input number
  * @base: target base
+ * @uppercase: choose print from flag
  * Return: result string
  */
 

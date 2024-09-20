@@ -3,7 +3,8 @@
 /**
  * print_custom - handles custom format specifier %S
  *
- * @l: list of arguments passed to _printf
+ * @l: list of arguments passed to _print
+ * @f: flags
  * Return: number of characters printed
  */
 

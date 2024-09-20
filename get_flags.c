@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * get_flag - handles flags for non-custom conversion specifiers
+ * get_flags - handles flags for non-custom conversion specifiers
  *
  * @s: flag character
+ * @f: flag structure
  * Return: 1 if flag is turned on 0 if not
  */
 

@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_address: handles the %p format specifier
+ * print_address - handles the %p format specifier
  *
  * @l: list of arguments passed to printf
+ * @f: flags
  * Return: number of characters printed
  */
 

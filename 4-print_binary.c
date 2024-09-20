@@ -4,6 +4,7 @@
  * print_binary - prints unsigned integer as binary
  *
  * @l: list of arguments passed to _printf
+ * @f: flags
  * Return: number of characters printed
  */
 

@@ -3,7 +3,8 @@
 /**
  * print_int - prints an integer
  *
- * @l: list of arguments passed to printf
+ * @l: list of arguments passed to _printf
+ * @f: flags
  * Return: number of digits printed
  */
 

@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * type_string - prints a string
- * 
- * @l: variable arguments list from printf
+ * print_string - prints a string
+ *
+ * @l: variable arguments list from _print
+ * @f: flags
  * Return: number of characters printed
  */
 
@@ -14,5 +15,5 @@ int print_string(va_list l, flags_t *f)
 	(void)f;
 	if (!s)
 		s = "(null)";
-	return(_puts(s));
+	return (_puts(s));
 }

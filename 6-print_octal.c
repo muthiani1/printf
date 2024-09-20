@@ -4,6 +4,7 @@
  * print_octal - handles %o specifier
  *
  * @l: arguments list passed to printf
+ * @f: flags
  * Return: number of characters printed
  */
 

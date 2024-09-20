@@ -4,6 +4,7 @@
  * print_hex - handles %x specifier
  *
  * @l: arguments list passed to _printf
+ * @f: flags
  * Return: number of characters printed
  */
 
@@ -24,6 +25,7 @@ int print_hex(va_list l, flags_t *f)
  * print_hexBig - handles %X format specifier
  *
  * @l: arguments list provided to _printf
+ * @f: flags
  * Return: number of character printed
  */
 
