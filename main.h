@@ -31,5 +31,6 @@ int print_unsigned(va_list l);
 int print_octal(va_list l);
 int print_hex(va_list l);
 int print_hexBig(va_list l);
+int print_custom(va_list l);
 
 #endif /* MAIN_H */

@@ -19,9 +19,10 @@ int (*get_type(char s))(va_list)
 		{'u', print_unsigned},
 		{'o', print_octal},
 		{'x', print_hex},
-		{'X', print_hexBig}
+		{'X', print_hexBig},
+		{'S', print_custom}
 	};
-	int flags = 9;
+	int flags = 10;
 
 	for (i = 0; i < flags; i++)
 		if (func_arr[i].c == s)
